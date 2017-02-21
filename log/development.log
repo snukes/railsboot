@@ -311,3 +311,1030 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 174ms (Views: 169.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 73.88.24.219 at 2017-02-20 22:25:12 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (0.6ms)
+Completed 200 OK in 749ms (Views: 735.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 22:37:10 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (9.2ms)
+Completed 500 Internal Server Error in 203ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"beer"}):
+    4:       <ul>
+    5:         <li class="nav-primary"><a href="#">Home</a></li>
+    6:         <li class="nav-primary"><a href="#">Approach</a></li>
+    7:         <li class="nav-primary"><%= link_to "Beers", { :controller => :beer } %></li>
+    8:         <li class="nav-primary"><a href="#">People</a></li>
+    9:         <li class="nav-secondary"><a href="#">Jobs</a></li>
+   10:         <li class="nav-secondary"><a href="#">Blog</a></li>
+  
+app/views/shared/_navbar.html.erb:7:in `_app_views_shared__navbar_html_erb__2775267663309347388_70125310609920'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___4326306246475009381_70125307242280'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (21.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (75.9ms)
+Started GET "/" for 73.88.24.219 at 2017-02-20 22:39:13 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"beer"}):
+    4:       <ul>
+    5:         <li class="nav-primary"><a href="#">Home</a></li>
+    6:         <li class="nav-primary"><a href="#">Approach</a></li>
+    7:         <li class="nav-primary"><%= link_to "Beers", controller: "beer" %></li>
+    8:         <li class="nav-primary"><a href="#">People</a></li>
+    9:         <li class="nav-secondary"><a href="#">Jobs</a></li>
+   10:         <li class="nav-secondary"><a href="#">Blog</a></li>
+  
+app/views/shared/_navbar.html.erb:7:in `_app_views_shared__navbar_html_erb__2775267663309347388_70125384018300'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___4326306246475009381_70125391465040'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (30.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (57.8ms)
+Started GET "/" for 73.88.24.219 at 2017-02-20 22:45:10 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (3.5ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"beer"}):
+    4:       <ul>
+    5:         <li class="nav-primary"><a href="#">Home</a></li>
+    6:         <li class="nav-primary"><a href="#">Approach</a></li>
+    7:         <li class="nav-primary"><%= link_to "Beers", controller: "beer", action: "index" %></li>
+    8:         <li class="nav-primary"><a href="#">People</a></li>
+    9:         <li class="nav-secondary"><a href="#">Jobs</a></li>
+   10:         <li class="nav-secondary"><a href="#">Blog</a></li>
+  
+app/views/shared/_navbar.html.erb:7:in `_app_views_shared__navbar_html_erb__2775267663309347388_70125311834660'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___4326306246475009381_70125313285300'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.8ms)
+Started GET "/" for 73.88.24.219 at 2017-02-20 22:50:20 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"beer"}):
+    4:       <ul>
+    5:         <li class="nav-primary"><a href="#">Home</a></li>
+    6:         <li class="nav-primary"><a href="#">Approach</a></li>
+    7:         <li class="nav-primary"><%= link_to "Beers", controller: "beer", action: "index" %></li>
+    8:         <li class="nav-primary"><a href="#">People</a></li>
+    9:         <li class="nav-secondary"><a href="#">Jobs</a></li>
+   10:         <li class="nav-secondary"><a href="#">Blog</a></li>
+  
+app/views/shared/_navbar.html.erb:7:in `_app_views_shared__navbar_html_erb__2775267663309347388_70125312793060'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___4326306246475009381_70125314314760'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.3ms)
+Started GET "/" for 73.88.24.219 at 2017-02-20 22:51:13 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"beer"}):
+    4:       <ul>
+    5:         <li class="nav-primary"><a href="#">Home</a></li>
+    6:         <li class="nav-primary"><a href="#">Approach</a></li>
+    7:         <li class="nav-primary"><%= link_to "Beers", controller: "beer", action: "index" %></li>
+    8:         <li class="nav-primary"><a href="#">People</a></li>
+    9:         <li class="nav-secondary"><a href="#">Jobs</a></li>
+   10:         <li class="nav-secondary"><a href="#">Blog</a></li>
+  
+app/views/shared/_navbar.html.erb:7:in `_app_views_shared__navbar_html_erb__2775267663309347388_70125381149820'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___4326306246475009381_70125384158440'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (30.5ms)
+Started GET "/" for 73.88.24.219 at 2017-02-20 22:55:23 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"beer"}):
+    4:       <ul>
+    5:         <li class="nav-primary"><a href="#">Home</a></li>
+    6:         <li class="nav-primary"><a href="#">Approach</a></li>
+    7:         <li class="nav-primary"><%= link_to "Beers", controller: "beer", action: "index" %></li>
+    8:         <li class="nav-primary"><a href="#">People</a></li>
+    9:         <li class="nav-secondary"><a href="#">Jobs</a></li>
+   10:         <li class="nav-secondary"><a href="#">Blog</a></li>
+  
+app/views/shared/_navbar.html.erb:7:in `_app_views_shared__navbar_html_erb__2775267663309347388_70125387216600'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___4326306246475009381_70125391448060'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (31.7ms)
+Started GET "/" for 73.88.24.219 at 2017-02-20 22:55:44 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (4.8ms)
+Completed 500 Internal Server Error in 589ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"index", :controller=>"beer"}):
+    4:       <ul>
+    5:         <li class="nav-primary"><a href="#">Home</a></li>
+    6:         <li class="nav-primary"><a href="#">Approach</a></li>
+    7:         <li class="nav-primary"><%= link_to "Beers", controller: "beer", action: "index" %></li>
+    8:         <li class="nav-primary"><a href="#">People</a></li>
+    9:         <li class="nav-secondary"><a href="#">Jobs</a></li>
+   10:         <li class="nav-secondary"><a href="#">Blog</a></li>
+  
+app/views/shared/_navbar.html.erb:7:in `_app_views_shared__navbar_html_erb___1771293372223934596_70129721404000'
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___1157022129760896888_24319860'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.1ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (37.1ms)
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:20:36 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 59ms (Views: 55.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:26:18 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 55ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:28:24 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 53ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:37:02 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 85ms (Views: 80.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:37:02 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:37:04 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 43ms (Views: 41.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:37:10 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 43ms (Views: 41.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:44:58 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/root/workspace/sassboot/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+ent_page?(controller: 'beer'));@output_buffer.safe_append='
+                              ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:16: syntax error, unexpected keyword_else
+e;@output_buffer.append=( else );@output_buffer.safe_append=
+                              ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;       end 
+                   ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected keyword_else
+app/views/layouts/application.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.1ms)
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:46:41 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (1.7ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/root/workspace/sassboot/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+nt_page?(controller: 'beer') );@output_buffer.safe_append='
+                              ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:16: syntax error, unexpected keyword_else
+e;@output_buffer.append=( else );@output_buffer.safe_append=
+                              ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;       end 
+                   ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected keyword_else
+app/views/layouts/application.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (34.5ms)
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:49:04 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/root/workspace/sassboot/app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+fer.append=( if @beer_navbar );@output_buffer.safe_append='
+                              ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:16: syntax error, unexpected keyword_else
+e;@output_buffer.append=( else );@output_buffer.safe_append=
+                              ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;       end 
+                   ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/root/workspace/sassboot/app/views/layouts/application.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected ')', expecting keyword_then or ';' or '\n'
+app/views/layouts/application.html.erb:16: syntax error, unexpected keyword_else
+app/views/layouts/application.html.erb:18: syntax error, unexpected keyword_end, expecting ')'
+app/views/layouts/application.html.erb:26: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/layouts/application.html.erb:28: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.0ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (47.4ms)
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:49:38 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 46ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:49:41 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 38ms (Views: 36.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:49:42 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:49:43 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 40ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:49:44 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:50:44 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (3.4ms)
+  Rendered shared/_beerNavbar.html.erb (2.3ms)
+Completed 200 OK in 88ms (Views: 83.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:50:47 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:50:49 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_beerNavbar.html.erb (1.2ms)
+Completed 200 OK in 41ms (Views: 39.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:50:50 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (0.9ms)
+Completed 200 OK in 45ms (Views: 43.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:50:52 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_beerNavbar.html.erb (1.5ms)
+Completed 200 OK in 53ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:50:52 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 52ms (Views: 49.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:52:27 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 45ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:52:29 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_beerNavbar.html.erb (1.1ms)
+Completed 200 OK in 50ms (Views: 48.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:52:31 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:52:32 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_beerNavbar.html.erb (1.5ms)
+Completed 200 OK in 54ms (Views: 52.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:52:33 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 40ms (Views: 38.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:52:34 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_beerNavbar.html.erb (1.4ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:52:34 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:52:35 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_beerNavbar.html.erb (1.5ms)
+Completed 200 OK in 46ms (Views: 44.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:52:36 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:52:36 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_beerNavbar.html.erb (1.1ms)
+Completed 200 OK in 36ms (Views: 34.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:52:37 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.0ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:52:37 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_beerNavbar.html.erb (1.0ms)
+Completed 200 OK in 34ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:55:33 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+Completed 200 OK in 55ms (Views: 51.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-20 23:55:35 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+Completed 200 OK in 47ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-20 23:55:36 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+Completed 200 OK in 40ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-21 00:07:35 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+Completed 200 OK in 110ms (Views: 107.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 00:07:37 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-21 00:07:39 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 50ms (Views: 48.3ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (24.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (19.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateBeers (20170221001714)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.6ms)[0m  [1m[35mCREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "desc" text, "abv" decimal, "type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170221001714"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2017-02-21 00:20:42 UTC], ["updated_at", 2017-02-21 00:20:42 UTC]]
+  [1m[35m (10.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 00:26:18 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-21 00:26:19 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 00:26:19 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 45ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 00:43:32 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 00:43:34 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+Completed 200 OK in 59ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-21 00:43:35 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 70ms (Views: 68.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 201.163.17.4 at 2017-02-21 00:46:24 +0000
+Cannot render console from 201.163.17.4! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddBreweryToBeer (20170221005658)
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (13.2ms)[0m  [1m[35mALTER TABLE "beers" ADD "brewery" text[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170221005658"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/" for 73.88.24.219 at 2017-02-21 01:08:05 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+Completed 200 OK in 57ms (Views: 54.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 01:08:08 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 51ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 01:19:36 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  Rendered beer/index.html.erb within layouts/application (8.7ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `size' for nil:NilClass):
+     6:       <div class="band-container">
+     7:         <div class="band-inner">
+     8:           <h1>Lorem ipsum dolor</h1>
+     9:           <% if @beerlist.size > 0 %>
+    10:             <ul>
+    11:               <% @beerlist.each do |beer| %>
+    12:                 <li>
+  
+app/views/beer/index.html.erb:9:in `_app_views_beer_index_html_erb___3285073400225651888_70129710147840'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.6ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (36.4ms)
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 01:20:16 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers"[0m
+  Rendered beer/index.html.erb within layouts/application (9.0ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 60ms (Views: 55.6ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-21 01:20:38 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 59ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 01:20:40 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers"[0m
+  Rendered beer/index.html.erb within layouts/application (5.1ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+Completed 200 OK in 66ms (Views: 62.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/beer/create" for 73.88.24.219 at 2017-02-21 01:21:17 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+ActionController::RoutingError (No route matches [GET] "/beer/create"):
+  
+actionpack (5.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.4.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.4.0) lib/web_console/middleware.rb:20:in `block in call'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.4.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.1) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.7.0) lib/puma/configuration.rb:226:in `call'
+puma (3.7.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.7.0) lib/puma/server.rb:415:in `process_client'
+puma (3.7.0) lib/puma/server.rb:275:in `block in run'
+puma (3.7.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendered collection of /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [3 times] (12.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (14.2ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (66.8ms)
+Started GET "/beer/create" for 73.88.24.219 at 2017-02-21 01:26:03 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  
+SyntaxError (/root/workspace/sassboot/config/routes.rb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  get '/beer/create', to 'beer#create'
+                          ^):
+  
+config/routes.rb:6: syntax error, unexpected tSTRING_BEG, expecting keyword_do or '{' or '('
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.9ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.8ms)
+Started GET "/beer/create" for 73.88.24.219 at 2017-02-21 01:27:04 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#create as HTML
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to locate the subclass: 'ale'. This error is raised because the column 'type' is reserved for storing the class in case of inheritance. Please rename this column if you didn't intend it to be used for storing the inheritance class or overwrite Beer.inheritance_column to use another column for that information.):
+  
+app/controllers/beer_controller.rb:11:in `create'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (31.5ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveTypeFromBeer (20170221013008)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.2ms)[0m  [1m[35mCREATE TEMPORARY TABLE "abeers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "desc" text, "abv" decimal, "type" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "brewery" text)[0m
+  [1m[35m (0.4ms)[0m  [1m[32mINSERT INTO "abeers" ("id","name","desc","abv","type","created_at","updated_at","brewery")
+                     SELECT "id","name","desc","abv","type","created_at","updated_at","brewery" FROM "beers"[0m
+  [1m[35m (9.4ms)[0m  [1m[35mDROP TABLE "beers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "beers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "desc" text, "abv" decimal, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "brewery" text)[0m
+  [1m[35m (0.3ms)[0m  [1m[32mINSERT INTO "beers" ("id","name","desc","abv","created_at","updated_at","brewery")
+                     SELECT "id","name","desc","abv","created_at","updated_at","brewery" FROM "abeers"[0m
+  [1m[35m (0.3ms)[0m  [1m[35mDROP TABLE "abeers"[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170221013008"]]
+  [1m[35m (30.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddCategoryToBeer (20170221013042)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (5.7ms)[0m  [1m[35mALTER TABLE "beers" ADD "category" varchar[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20170221013042"]]
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/beer/create" for 73.88.24.219 at 2017-02-21 01:31:38 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by BeerController#create as HTML
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.9ms)[0m  [1m[32mINSERT INTO "beers" ("name", "desc", "abv", "created_at", "updated_at", "brewery", "category") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "Spotted Cow"], ["desc", "Hazy farmhouse ale brewed in New Glarus, WI"], ["abv", 0.48e1], ["created_at", 2017-02-21 01:31:38 UTC], ["updated_at", 2017-02-21 01:31:38 UTC], ["brewery", "New Glarus Brewing Company"], ["category", "ale"]]
+  [1m[35m (4.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://dev.mitchellsheaffer.com:3000/beer
+Completed 302 Found in 41ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 01:31:39 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers"[0m
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  Rendered beer/index.html.erb within layouts/application (11.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `type' for #<Beer:0x007f90b2945490>):
+    15:                     <h4><%= beer.brewery %></h4>
+    16:                     <p><%= beer.desc %></p>
+    17:                     <p><%= beer.abv %></p>
+    18:                     <p><%= beer.type %></p>
+    19:                   </div>
+    20:                 <li>
+    21:               <% end %>
+  
+app/views/beer/index.html.erb:18:in `block in _app_views_beer_index_html_erb___3285073400225651888_70129724138660'
+app/views/beer/index.html.erb:11:in `_app_views_beer_index_html_erb___3285073400225651888_70129724138660'
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendering /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.4.0/gems/actionpack-5.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (32.5ms)
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 01:32:12 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers"[0m
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  Rendered beer/index.html.erb within layouts/application (7.3ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+Completed 200 OK in 83ms (Views: 78.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 01:39:17 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers"[0m
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  Rendered beer/index.html.erb within layouts/application (15.0ms)
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" GROUP BY "beers"."category"[0m
+  Rendered shared/_navbar.html.erb (3.1ms)
+Completed 200 OK in 72ms (Views: 61.4ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-21 01:40:25 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 01:40:27 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers"[0m
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  Rendered beer/index.html.erb within layouts/application (5.4ms)
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" GROUP BY "beers"."category"[0m
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 200 OK in 50ms (Views: 46.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-21 01:40:29 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+Completed 200 OK in 40ms (Views: 38.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/beer" for 73.88.24.219 at 2017-02-21 01:40:29 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by BeerController#index as HTML
+  Rendering beer/index.html.erb within layouts/application
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "beers"[0m
+  [1m[36mBeer Load (0.2ms)[0m  [1m[34mSELECT "beers".* FROM "beers"[0m
+  Rendered beer/index.html.erb within layouts/application (2.9ms)
+  [1m[36mBeer Load (0.3ms)[0m  [1m[34mSELECT "beers".* FROM "beers" GROUP BY "beers"."category"[0m
+  Rendered shared/_navbar.html.erb (2.6ms)
+Completed 200 OK in 47ms (Views: 44.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 73.88.24.219 at 2017-02-21 01:40:30 +0000
+Cannot render console from 73.88.24.219! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+Completed 200 OK in 77ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+

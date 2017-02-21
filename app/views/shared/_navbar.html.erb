@@ -2,12 +2,16 @@
   <div class="l-nav">
     <nav class="nav">
       <ul>
-        <li class="nav-primary"><a href="#">Home</a></li>
-        <li class="nav-primary"><a href="#">Approach</a></li>
-        <li class="nav-primary"><a href="#">Work</a></li>
-        <li class="nav-primary"><a href="#">People</a></li>
-        <li class="nav-secondary"><a href="#">Jobs</a></li>
-        <li class="nav-secondary"><a href="#">Blog</a></li>
+        <li class="nav-primary"><%= link_to "Home", controller: "home", action: 'index' %></li>
+        <li class="nav-primary"><%= link_to "Beers", controller: "beer" %></li>
+          <% if @beer_navbar %>
+            <ul>
+              <% @categoryList.each do |category| %>
+                <li><%= category.category %></li>
+              <% end %>
+            </ul>
+          <% end %>
+        <li class="nav-secondary"><a href="#">Contact</a></li>
         <li class="nav-secondary"><a href="#">Contact</a></li>
       </ul>
     </nav>
